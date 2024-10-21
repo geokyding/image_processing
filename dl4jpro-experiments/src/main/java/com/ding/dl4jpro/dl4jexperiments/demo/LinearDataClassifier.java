@@ -47,7 +47,8 @@ public class LinearDataClassifier {
         /*https://mgubaidullin.github.io/deeplearning4j-docs/cn/datavec
         * https://zhuanlan.zhihu.com/p/60119869
         * DL4J有自己的特殊的数据结构DataVec，所有的输入数据在进入神经网络之前要先经过向量化。向量化后的结果就是一个行数不限的单列矩阵。
-        * 熟悉Hadoop/MapReduce的朋友肯定知道它的输入用InputFormat来确定具体的InputSplit和RecordReader。DataVec也有自己FileSplit和RecordReader，
+        * 熟悉Hadoop/MapReduce的朋友肯定知道它的输入用InputFormat来确定具体的InputSplit和RecordReader。
+        * DataVec也有自己FileSplit和RecordReader，
         * 并且对于不同的数据类型（文本、CSV、音频、图像、视频等），有不同的RecordReader，下面是一个图像的例子。
         * */
         FileSplit fileSplit = new FileSplit(new File(""));
